@@ -5,9 +5,11 @@ const cors = require('cors');
 
 const app = express();
 const port = config.get('port');
+const router = express.Router();
+const controllers = require('./controllers');
 
 require('../database/config');
-app.use(cors());
+router.use(cors());
 
 app.use(
   bodyParser.urlencoded({
@@ -17,7 +19,7 @@ app.use(
 );
 
 // app.use(passport.initialize());
-// app.use('/recommendations/api', controllers);
+app.use('/store/api', controllers);
 // @ts-ignore
 app.get('/', (req, res) => {
     res.send('Hello World!');
