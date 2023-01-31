@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "plugin:node/recommended",
+    "google"
+  ],
+  "plugins": ["prettier"],
+  "rules": {
+    "node/no-unpublished-require": "off",
+    "prettier/prettier": "error",
+    "new-cap": 0,
+    "comma-dangle": ["error", "never"],
+    "quote-props": "off",
+    "indent": [2, 2],
+    "object-curly-spacing": ["error", "always"],
+    "max-len": "off",
+    "require-jsdoc": "off",
+    "operator-linebreak": [2, "before"]
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  }
+}

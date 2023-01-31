@@ -9,7 +9,7 @@ const router = express.Router();
 const controllers = require('./controllers');
 
 require('../database/config');
-router.use(cors());
+app.use(cors());
 
 app.use(
   bodyParser.urlencoded({

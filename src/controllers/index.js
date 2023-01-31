@@ -25,7 +25,7 @@ const cardController = require('./cardController');
 //   authenticationFunc('jwt-strategy'),
 //   cardController
 // );
-router.use('/', cardController);
+router.use('/stocks', cardController);
 
 // router.use('/locations', locationsController);
 // router.use('/specializations', specializationsController);
